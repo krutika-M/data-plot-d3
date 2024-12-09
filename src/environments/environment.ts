@@ -3,9 +3,34 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://mock-api.assessment.sfsdm.org',
+  availableLanguages: ['de', 'en'],
+  environment: 'test',
+  environmentColour: 'blue',
+  environmentName: '[TEST]',
+  endpoints: {
+    config: '/config',
+    devices: '/devices',
+    events: '/events/{deviceId}',
+    order: '/order/{orderId}',
+  },
 };
 
+export const environmentQ = {
+  production: false,
+  apiUrl: 'https://mock-api.assessment.sfsdm.org',
+  availableLanguages: ['de', 'en'],
+  environment: 'quality',
+  environmentColour: 'orange',
+  environmentName: '[QUAL]',
+  endpoints: {
+    config: '/config',
+    devices: '/devices',
+    events: '/events/{deviceId}',
+    order: '/order/{orderId}',
+  },
+};
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
